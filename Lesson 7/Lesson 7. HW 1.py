@@ -13,16 +13,11 @@ print('Задача 1. Тайны археологии')
 
 a = int(input("Введите число: "))
 b = True
-a1 = a % 10
-if(a1 == 2 or a1 == 4 or a1 == 6 or a1 == 8 or a1 == 0):
-    for n in range(2, a):
-        c = a % b
-        if c == 0:
-            b = False
-            break
-    if b:
-        print("Число подходит")
-    else:
-        print("Число не подходит")
+for n in (2, 3):
+    if a % n != 0:
+        b = False
+        break
+if b:
+     print("Число подходит")
 else:
     print("Число не подходит")
