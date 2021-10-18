@@ -14,11 +14,11 @@ print('Задача 7. Костя хочет выигрывать')
 print ("Привет, Костя!")
 a = int(input("Первое число: "))
 b = int(input("Второе число: "))
-c = int(input("Третье число: "))
+c = int(input("Третье число: ")) ##a != c and a != c and b != c
 print()
 if (a == b and a == c):
     print(3)
-elif(a == b and a != c or b == c and a != c or a == c and b != c):
+elif(a == b or b == c or a == c):
     print(2)
 else:
     print(0)
