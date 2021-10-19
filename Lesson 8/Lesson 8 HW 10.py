@@ -41,7 +41,7 @@ print('Задача 10. Кинотеатр')
 b = int(input("Кол-во мальчиков: "))
 g = int(input("Кол-во девочек: "))
 c = ""
-print (b/g, g/b)
+#print (b/g, g/b)
 if (b / g >= 2 or g / b >= 2):
     print("Нет решений.")
 else:
