@@ -1,3 +1,7 @@
+from _typeshed import NoneType
+from typing import Text
+
+
 print('Задача 10. Кинотеатр')
 
 # X мальчиков и Y девочек пошли в кинотеатр
@@ -34,3 +38,21 @@ print('Задача 10. Кинотеатр')
 # Введите кол-во мальчиков: 100
 # Введите кол-во девочек: 1
 # Ответ: Нет решения
+
+a = int(input("Кол-во мальчиков: "))
+b = int(input("Кол-во девочек: "))
+c = Text
+
+if(a > b):
+   if a / b <= 2:
+       for n in range(b):
+           c += 'BG'
+   else:
+       c = 'Нет решений!'
+else:
+   if b / a <= 2:
+       for c in range(a):
+           c += 'GB'
+   else:
+       c = 'Нет решений!'
+print(c)

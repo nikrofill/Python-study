@@ -6,3 +6,12 @@ print('Задача 9. Выражение')
 
 # ((x-1)(x-3)(x-7)…(x-63)/
 # ((x-2)(x-4)(x-8)…(x-64)) 
+x = int(input("Введитечисло: "))
+sum2 = 1
+sum1 = 1
+for n in range(64):
+    if(n % 2 == 0):
+        sum2 = sum2 * (x - n)
+    else:
+        sum1 = sum1 * (x - n)
+print("ответ: ", sum1 / sum2)
