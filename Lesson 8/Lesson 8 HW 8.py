@@ -6,5 +6,7 @@ print('Задача 8. Сумма ряда')
 # S = 1 - 1/2 + 1/4 - 1/8 + … (-1)**N * 1/2**N 
 
 a = int(input("Число: "))
-for n in range(a):
-    p
+s = 0
+for n in range(0,a+1,1):
+    s += -1**n/2**n
+print(s)
