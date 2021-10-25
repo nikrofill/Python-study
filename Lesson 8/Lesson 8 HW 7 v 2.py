@@ -12,9 +12,11 @@ a = int(input("Степеньдия: ")) * 10
 b = int(input("Расходы: "))
 c = b
 for n in range(2,11,1):
-    b = b + b * 1.03
-    #print (b)
-if(a - (b+c) >= 0):
+    b = b * 1.03
+    c = c + b
+    #print (b, c)
+#print (a-c)
+if(a - c >= 0):
     print("У родителей ничего не надо брать")
 else:
-    print("У родителей надо взять: ", (a-(b+c)) * -1)
+    print("У родителей надо взять: ", (a-c) * -1)
