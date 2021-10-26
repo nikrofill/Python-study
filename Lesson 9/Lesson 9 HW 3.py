@@ -17,9 +17,7 @@ print('Задача 3. Кривой мессенджер')
 a = input("Введи: ")
 c = 0
 for n in a:
+    c = c + 1
     if (n == "*"):
-        c = c + 1
         print (c)
         break
-    else:
-        c = c + 1
