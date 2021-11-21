@@ -21,9 +21,7 @@ print('Задача 4. Крест')
 
 for n in range(10):
   for n1 in range(10):
-    if n == n1:
-      print("^", end = "")
-    elif n == 9 - n1:
+    if n == n1 or n == 9 - n1:
       print("^", end = "")
     else:
       print(" ", end = "")
